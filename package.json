@@ -13,8 +13,11 @@
   "author": "Yashendra Goyal",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.1",
     "ejs": "^3.1.6",
+    "express": "^4.17.2",
     "faker": "^5.5.3",
+    "nodemon": "^2.0.15",
     "supertest": "^6.1.6"
   },
   "jest": {
@@ -22,5 +25,16 @@
   },
   "devDependencies": {
     "jest": "^27.4.5"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rijav1001/node-js-assignments.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rijav1001/node-js-assignments/issues"
+  },
+  "homepage": "https://github.com/rijav1001/node-js-assignments#readme"
 }
