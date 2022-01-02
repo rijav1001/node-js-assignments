@@ -10,12 +10,12 @@
 <body>
     <div class="main">
         <div class="add-users">
-            <a href="/form">Add User</a>
+            <a href="/form" style="text-decoration: none;">Add User</a>
         </div>
         <div class="container">
             <% users.forEach(user => {%>
                 <div class="list">
-                    <h3><%= user.name %></h3>
+                    <h3><%= user.username %></h3>
                     <p><%= user.email %></p>
                 </div>
             <%})%>

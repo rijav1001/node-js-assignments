@@ -1,26 +1,27 @@
 const express = require('express');
 const faker = require('faker')
 const bodyParser = require('body-parser');
+const path = require('path');
 const app = express();
 
+app.use(express.static('public'));
 app.use(express.urlencoded({
     extended: true
-}))
-app.use(express.static('public'));
+}));
 
 var users = [];
 for (let i = 0; i < 3; i++) {
     users.push({
-        name: faker.name.findName(),
+        username: faker.name.findName(),
         email: faker.internet.email()
     })
 }
 
-app.set('views', './views');
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.render('index', {data:users});
+    res.render('index', {users});
 });
 
 app.get('/form', (req, res) => {
@@ -29,9 +30,9 @@ app.get('/form', (req, res) => {
 
 app.post('/user/add', (req, res) => {
     users.push({
-        name: req.body.name,
+        username: req.body.username,
         email: req.body.email
-    })
+    });
     res.redirect('/');
 });
 
