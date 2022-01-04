@@ -46,10 +46,26 @@ body {
 
 .list-false {
     background-color: red;
+    text-align: center;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 5px;
+    width: 88%;
+    box-shadow: 7px -4px 4px -1px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 7px -4px 4px -1px rgba(0,0,0,0.67);
+    -moz-box-shadow: 7px -4px 4px -1px rgba(0,0,0,0.67);
 }
 
 .list-true {
     background-color: green;
+    text-align: center;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 5px;
+    width: 88%;
+    box-shadow: 7px -4px 4px -1px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 7px -4px 4px -1px rgba(0,0,0,0.67);
+    -moz-box-shadow: 7px -4px 4px -1px rgba(0,0,0,0.67);
 }
 
 .form {
